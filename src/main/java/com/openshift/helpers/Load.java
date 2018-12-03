@@ -20,7 +20,7 @@ public class Load {
             this.duration = duration;
         }
 
-        
+
         @Override
         public void run() {
             long startTime = System.currentTimeMillis();
@@ -32,7 +32,11 @@ public class Load {
                     }
                 }
             } catch (InterruptedException e) {
+                //LOGGER.log("context", e);
                 e.printStackTrace();
+
+                 // Restore interrupted state...
+
                 Thread.currentThread().interrupt();
             }
         }

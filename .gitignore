@@ -17,3 +17,6 @@ logs/
 hs_err_pid*
 
 .tern-project
+
+# Used in openshift profile
+/deployments/
